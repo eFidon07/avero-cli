@@ -1,104 +1,114 @@
 # @avero/cli
 
-A modular CLI tool for scaffolding production-ready Node.js projects. Generate API services with best practices and modern tooling configured out of the box.
+**@avero/cli** is a modular command-line tool for scaffolding **production-ready Node.js API services**.  
+It helps you bootstrap backend projects with best practices and modern tooling—configured out of the box.
 
-## Installation
+---
 
-### Global Installation
+## ✨ Features
 
-\`\`\`bash
+- Generate Express-based API services
+- TypeScript **or** JavaScript support
+- Opinionated but flexible project structure
+- Built-in tooling for testing, linting, and logging
+- Designed for scalability and real-world production use
+
+---
+
+## 📦 Installation
+
+### Global Installation (Recommended)
+
+```bash
 npm install -g @avero/cli
-\`\`\`
-
-### Local Development
-
-\`\`\`bash
+Local Development Setup
+bash
+Copy code
 git clone <your-repo>
 npm install
 npm run build
 npm link
-\`\`\`
+🚀 Usage
+Create an API Service (Main Feature)
+Create a new Node.js API service using interactive or non-interactive modes.
 
-## Usage
-
-### Create API Service (Main Feature)
-
-Create a new Node.js API service:
-
-\`\`\`bash
-
-# Interactive mode
-
+Interactive Mode
+bash
+Copy code
 avero create
+Or via npx:
 
-# Or use npx
-
+bash
+Copy code
 npx @avero/cli create
-
-# With project name
-
+With Project Name
+bash
+Copy code
 avero create my-api-project
+Or:
 
-# Or use npx with project name
-
+bash
+Copy code
 npx @avero/cli create my-api-project
-
-# With custom directory
-
+With Custom Directory
+bash
+Copy code
 avero create my-api --dir ./custom-path
+Or:
 
-# Or use npx with custom directory
-
+bash
+Copy code
 npx @avero/cli create my-api --dir ./custom-path
-\`\`\`
+🧱 What Gets Generated
+The API generator includes:
 
-The API generator supports both TypeScript and JavaScript, and includes:
+✅ Express.js server setup
 
-- ✅ Express.js server setup
-- ✅ Health check endpoint
-- ✅ Error handling middleware
-- ✅ Logger utility
-- ✅ Jest testing setup
-- ✅ ESLint configuration
-- ✅ Environment variables support
-- ✅ Git repository initialization
+✅ Health check endpoint
 
-### Initialize Other Services
+✅ Centralized error handling middleware
 
-Initialize additional services for your project:
+✅ Logger utility
 
-\`\`\`bash
+✅ Jest testing configuration
 
-# Initialize database configuration (coming soon)
+✅ ESLint configuration
 
+✅ Environment variable support
+
+✅ Git repository initialization
+
+🛠 Initialize Other Services
+Initialize additional services for your project.
+
+bash
+Copy code
+# Database initialization (coming soon)
 avero init database
+📖 Available Commands
+Command	Description
+avero create [name]	Create a new Node.js API service
+avero generate [name]	Generate a new feature (auth, user, etc.)
+avero init [service]	Initialize a service (database, etc.)
+avero --help	Show help
+avero -v	Show CLI version
 
-## Available Commands
-
-- \`avero create [name]\` - Create a new Node.js API service
-- \`avero generate [name]\` - Generate a new feature (e.g., auth, user, etc.)
-- \`avero init [service]\` - Initialize a service (database, etc.)
-- \`avero --help\` - Show help
-- \`avero -v\` - Show version
-
-## Project Structure
-
-\`\`\`
+🗂 Project Structure
+text
+Copy code
 @avero/cli/
 ├── src/
-│ ├── index.ts # Main CLI entry
-│ ├── commands/
-│ │ └── init.ts # Init command for services
-│ ├── core/
-│ │ └── api/
-│ │ │ ├── create.ts # API generator logic
-│ │ │ └── templates/
-│ │ │ │ └── index.ts # API templates
+│   ├── index.ts             # Main CLI entry point
+│   ├── commands/
+│   │   └── init.ts          # Init command for services
+│   ├── core/
+│   │   └── api/
+│   │       ├── create.ts    # API generator logic
+│   │       └── templates/
+│   │           └── index.ts # API templates
 ├── package.json
 ├── tsconfig.json
 └── README.md
-\`\`\`
-
-## License
-
+📄 License
 MIT
+```
