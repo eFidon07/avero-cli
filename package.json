@@ -1,0 +1,35 @@
+{
+  "name": "@avero/cli",
+  "version": "1.0.0",
+  "description": "CLI tool to generate various project templates",
+  "main": "dist/index.js",
+  "bin": {
+    "avero": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cli",
+    "nodejs",
+    "typescript",
+    "generator",
+    "template"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2",
+    "inquirer": "^13.1.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
