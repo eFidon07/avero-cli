@@ -3,11 +3,6 @@ import inquirer from "inquirer";
 
 const availableServices = [
   {
-    name: "Authentication Module",
-    value: "auth",
-    description: "JWT, OAuth, RBAC setup",
-  },
-  {
     name: "Database Configuration",
     value: "database",
     description: "Mongoose",
