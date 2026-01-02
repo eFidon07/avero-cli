@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CLI tool to generate various project templates",
   "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "bin": {
     "avero": "./dist/index.js"
   },
