@@ -55,7 +55,6 @@ npx @avero/cli create my-api --dir ./custom-path
 The API generator supports both TypeScript and JavaScript, and includes:
 
 - ✅ Express.js server setup
-- ✅ Health check endpoint
 - ✅ Error handling middleware
 - ✅ Logger utility
 - ✅ Jest testing setup
@@ -68,19 +67,23 @@ The API generator supports both TypeScript and JavaScript, and includes:
 Initialize additional services for your project:
 
 ```bash
-
 # Initialize database configuration (coming soon)
 
 avero init database
+```
 
 ## Available Commands
 
-- \`avero create [name]\` - Create a new Node.js API service
-- \`avero generate [name]\` - Generate a new feature (e.g., auth, user, etc.)
-- \`avero init [service]\` - Initialize a service (database, etc.)
-- \`avero --help\` - Show help
-- \`avero -v\` - Show version
+```bash
+- avero create [name] - Create a new Node.js API service
 
+- avero generate [name] - Generates a new feature directory with all required files
+
+- avero init [service] - Initialize a service (database, etc.)
+
+- avero --help - Show help
+
+- avero -v - Show version
 ```
 
 ## Project Structure
