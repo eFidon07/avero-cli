@@ -67,6 +67,7 @@ The API generator supports both TypeScript and JavaScript, and includes:
 Initialize additional services for your project:
 
 ```bash
+
 # Initialize database configuration (coming soon)
 
 avero init database
@@ -75,15 +76,26 @@ avero init database
 ## Available Commands
 
 ```bash
-- avero create [name] - Create a new Node.js API service
 
-- avero generate [name] - Generates a new feature directory with all required files
+# Create a new Node.js API service
 
-- avero init [service] - Initialize a service (database, etc.)
+avero create [name]
 
-- avero --help - Show help
+# Generate a new feature's directory with all required files
 
-- avero -v - Show version
+avero generate [feature-name]
+
+# Initialize a service (database, etc.)
+
+avero init [service]
+
+# Show help
+
+avero --help
+
+# Show version
+
+avero -v
 ```
 
 ## Project Structure
