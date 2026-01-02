@@ -28,27 +28,21 @@ Create a new Node.js API service:
 ```bash
 
 # Interactive mode
-
 avero create
 
 # Or use npx
-
 npx @avero/cli create
 
 # With project name
-
 avero create my-api-project
 
 # Or use npx with project name
-
 npx @avero/cli create my-api-project
 
 # With custom directory
-
 avero create my-api --dir ./custom-path
 
 # Or use npx with custom directory
-
 npx @avero/cli create my-api --dir ./custom-path
 ```
 
@@ -69,7 +63,6 @@ Initialize additional services for your project:
 ```bash
 
 # Initialize database configuration (coming soon)
-
 avero init database
 ```
 
@@ -78,23 +71,18 @@ avero init database
 ```bash
 
 # Create a new Node.js API service
-
 avero create [name]
 
 # Generate a new feature's directory with all required files
-
 avero generate [feature-name]
 
 # Initialize a service (database, etc.)
-
 avero init [service]
 
 # Show help
-
 avero --help
 
 # Show version
-
 avero -v
 ```
 
