@@ -33,11 +33,13 @@ avero create
 # Or use npx
 npx @avero/cli create
 
+
 # With project name
 avero create my-api-project
 
 # Or use npx with project name
 npx @avero/cli create my-api-project
+
 
 # With custom directory
 avero create my-api --dir ./custom-path
